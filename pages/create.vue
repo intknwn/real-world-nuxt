@@ -3,3 +3,21 @@
     <h1>Create an event</h1>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'CreateEventPage',
+  head() {
+    return {
+      title: 'Create An Event',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'You can create a new event in your neighborhood',
+        },
+      ],
+    }
+  },
+}
+</script>
