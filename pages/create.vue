@@ -1,19 +1,20 @@
 <template>
-  <h1>Events</h1>
+  <div>
+    <h1>Create an event</h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'CreateEventPage',
   head() {
     return {
-      title: 'Event Listing',
+      title: 'Create An Event',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Where you can find all events taking place in your neighborhood',
+          content: 'You can create a new event in your neighborhood',
         },
       ],
     }

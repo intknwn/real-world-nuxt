@@ -1,13 +1,18 @@
 <template>
-  <h1>Events</h1>
+  <div id="app">
+    <NavBar />
+    <Nuxt />
+  </div>
 </template>
 
 <script>
+import NavBar from '~/components/NavBar.vue'
+
 export default {
-  name: 'IndexPage',
+  components: { NavBar },
   head() {
     return {
-      title: 'Event Listing',
+      titleTemplate: '%s — Real World Events',
       meta: [
         {
           hid: 'description',
