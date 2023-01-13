@@ -39,9 +39,9 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  fetch({ error, store, params }) {
+  async fetch({ error, store, params }) {
     try {
-      store.dispatch('events/fetchEvent', params.id)
+      await store.dispatch('events/fetchEvent', params.id)
     } catch (e) {
       error({
         statusCode: e.statusCode,

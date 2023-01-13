@@ -19,10 +19,14 @@ export const actions = {
     const { data: events } = await EventService.getEvents()
 
     commit('SET_EVENTS', events)
+
+    return events
   },
   async fetchEvent({ commit }, id) {
     const { data: event } = await EventService.getEvent(id)
 
     commit('SET_EVENT', event)
+
+    return event
   },
 }
